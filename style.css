@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+/* nav */
+
+header {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0px;
+  background: #4a536b;
+  padding: 1.5%;
+}
+nav {
+  max-height: 8vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav h1,
+ul {
+  font-size: 1.5rem;
+  flex: 1;
+  color: #ff9a8d;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  padding: 5%;
+  color: white;
+  text-decoration: none;
+}
+
+/* about */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #aed6dc;
+}
+.about-pic img {
+  margin-top: 12vh;
+  padding: 8%;
+  width: 50vw;
+}
+.about-text {
+  padding: 8%;
+  margin-top: 8vh;
+}
+.about-text p {
+  font-size: 1.3rem;
+}
+.about-text h1 {
+  color: #4a536b;
+  margin-bottom: 8%;
+  font-size: 2.8rem;
+}
+.about-button {
+  padding: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-button button {
+  background-color: #ff9a8d;
+  font-size: 1.2rem;
+  font-weight: 800;
+  min-height: 7vh;
+  min-width: 9vw;
+  border-radius: 50px;
+}
+
+/* project */
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90vh;
+  background-color: #aed6dc;
+}
+.proj-cont {
+    padding-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.proj{
+  margin-right: 5vw;
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 200px 100px;
+  grid-template-areas: "image" "text";
+  border-radius: 18px;
+  background-color: #4a536b;
+  color: white;
+  font-weight: 400;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+.proj.a .proj-image {
+  background: url("amazon.PNG");
+  grid-area: image;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+}
+.proj.b .proj-image {
+    background: url("todo.PNG");
+    grid-area: image;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+  }
+.proj.c .proj-image {
+    background: url("esport.PNG");
+    grid-area: image;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+  }
+.proj.d .proj-image {
+    background: url("face.jfif");
+    grid-area: image;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+  }
+.proj-text {
+  margin: 25px;
+  grid-area: text;
+}
+.projects button {
+  background-color: #ff9a8d;
+  font-size: 1rem;
+  font-weight: 800;
+  min-height: 7vh;
+  min-width: 12vw;
+  border-radius: 50px;
+  margin-bottom: -8%;
+  
+}
+
+/* techstack */
+
+.tech-stack {
+  min-height: 80vh;
+  background-color: #aed6dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tech-cont {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* opacity: 0.5; */
+  /* backdrop-filter: blur(10px); */
+  width: 90vw;
+  margin: 4.5%;
+  border-radius: 25px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.upper {
+  /* opacity: 20px; */
+  display: flex;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+.upper h1,
+.lower h1 {
+  margin-top: 2.5%;
+  color: #ff9a8d;
+  margin-right: 4%;
+}
+.lower {
+  display: flex;
+  margin-left: 10%;
+}
+.tech-stack img {
+  height: 10vh;
+  margin: 2.2%;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 40vh;
+  background-color: #4a536b;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icons a {
+  color: #ff9a8d;
+  padding: 10%;
+}
+.email input {
+  width: 23vw;
+  height: 6vh;
+  padding: 3%;
+  font-size: 1.05rem;
+  border-radius: 20px;
+  background-color: #aed6dc;
+  font-weight: 600;
+}
+.email button {
+  background-color: #ff9a8d;
+  font-size: 1rem;
+  font-weight: 800;
+  min-height: 6vh;
+  min-width: 6vw;
+  border-radius: 50px;
+  margin-top: 4%;
+}
+.contact-left {
+  margin-right: 10%;
+}
+.contact-left p {
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+.contact-left p a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ff9a8d;
+}
+.contact-border {
+  border-radius: 20px;
+  border-left: 6px solid #aed6dc;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+}
