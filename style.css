@@ -115,7 +115,7 @@ nav a {
   .about {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     min-height: 100vh;
     background-color: #aed6dc;
   }
@@ -123,7 +123,8 @@ nav a {
     align-self: center;
   }
   .about-pic img {
-    margin-top: 10px;
+    margin-top: -15%;
+    margin-bottom: 10%;
     padding: 5%;
     width: 80vw;
   }
@@ -139,8 +140,12 @@ nav a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: #aed6dc;
+}
+.projects h1{
+  margin-bottom: 3%;
+  color: #4a536b;
 }
 .proj-cont {
     padding-bottom: 3%;
@@ -201,6 +206,14 @@ nav a {
   .proj-cont{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+  .proj{
+    margin-top: 10%;
+  }
+  .projects button{
+    margin-bottom: 20%;
+    margin-top: 10%;
   }
 }
 
@@ -251,12 +264,17 @@ nav a {
 }
 @media only screen and (max-width: 700px) {
   .upper{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .lower{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tech-stack img {
+    height: 10vh;
+    width: 20vw;
+    padding: 5%;
   }
 }
 
@@ -340,5 +358,10 @@ nav a {
   }
   .contact-right{
     margin: 8%;
+  }
+  .email input {
+    width: 60vw;
+    height: 5vh;
+    
   }
 }
