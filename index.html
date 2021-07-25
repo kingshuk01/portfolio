@@ -21,12 +21,16 @@
     <header>
       <nav>
         <h1>Portfolio</h1>
-        <ul>
+        <a onclick="navdown()" href="#" class="toggle-button">
+          <i class="fas fa-chevron-circle-down fa-2x"></i>
+        </a>
+        <ul id="nav-links" class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#tech-stack">TStack</a></li>
           <li><a href="#contact">About</a></li>
         </ul>
+        
       </nav>
     </header>
     <main>
@@ -120,6 +124,10 @@
         </div>
       </div>
 
+
+
+
+
       <div class="contact" id="contact">
         <div class="contact-left">
           <p>
@@ -129,7 +137,6 @@
             This was made using HTML,CSS and a pinch of JS
           </p>
         </div>
-
         <div class="contact-border"></div>
         <div class="contact-right">
           <div class="contact-icons">

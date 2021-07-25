@@ -9,3 +9,8 @@ function myFunction() {
   
     
   }
+
+  function navdown() {
+    var x = document.getElementById("nav-links");
+    x.classList.toggle('active')
+  }

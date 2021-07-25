@@ -14,8 +14,9 @@ header {
   background: #4a536b;
   padding: 1.5%;
 }
+
 nav {
-  max-height: 8vh;
+  /* max-height: 8vh; */
   margin: auto;
   width: 90%;
   display: flex;
@@ -39,6 +40,37 @@ nav a {
   color: white;
   text-decoration: none;
 }
+.toggle-button{
+  color: #ff9a8d;
+  position: absolute;
+  top: -0.2rem;
+  right: 1rem;
+}
+
+@media (max-width : 700px){
+  .toggle-button{
+    display: flex;
+  }
+  .nav-links{
+    display: none;
+    
+    flex-direction: column;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  nav ul.active{
+    transition: all 1s ease;
+    display: flex;
+  }
+}
+
+
+
+
 
 /* about */
 
@@ -79,6 +111,26 @@ nav a {
   min-width: 9vw;
   border-radius: 50px;
 }
+@media only screen and (max-width: 700px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #aed6dc;
+  }
+  .about-pic{
+    align-self: center;
+  }
+  .about-pic img {
+    margin-top: 10px;
+    padding: 5%;
+    width: 80vw;
+  }
+}
+
+
+
 
 /* project */
 
@@ -143,9 +195,19 @@ nav a {
   min-height: 7vh;
   min-width: 12vw;
   border-radius: 50px;
-  margin-bottom: -8%;
-  
+  margin-bottom: -8%;  
 }
+@media only screen and (max-width: 700px) {
+  .proj-cont{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
 
 /* techstack */
 
@@ -187,6 +249,22 @@ nav a {
   height: 10vh;
   margin: 2.2%;
 }
+@media only screen and (max-width: 700px) {
+  .upper{
+    display: flex;
+    flex-direction: column;
+  }
+  .lower{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
 
 /* contact */
 
@@ -242,4 +320,25 @@ nav a {
   height: 220px;
   position: absolute;
   left: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-border {
+    border-radius: 10px;
+    border-top: 4px solid #aed6dc;
+    width: 300px;
+    height: 0.1px;
+    position: absolute;
+    left:20%;
+  }
+  .contact-left{
+    margin: 8%;
+  }
+  .contact-right{
+    margin: 8%;
+  }
 }
