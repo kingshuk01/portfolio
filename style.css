@@ -230,11 +230,15 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.tech-stack h1{
+  color: #4a536b;
 }
 .tech-cont {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #4a536b;
   /* opacity: 0.5; */
   /* backdrop-filter: blur(10px); */
   width: 90vw;
