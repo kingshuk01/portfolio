@@ -128,6 +128,10 @@ nav a {
     padding: 5%;
     width: 80vw;
   }
+  .about-button button {
+    min-height: 6vh;
+    min-width: 20vw;
+  }
 }
 
 
@@ -214,6 +218,8 @@ nav a {
   .projects button{
     margin-bottom: 20%;
     margin-top: 10%;
+    min-height: 6vh;
+    min-width: 30vw;
   }
 }
 
