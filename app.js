@@ -15,6 +15,10 @@
   tl2.from('.upper img',{x : -2000, stagger :0.15}, "-=0.4")
   .from('.lower img',{x : -2000, stagger :0.15}, "-=0.4")
 
+
+
+
+
 function myFunction() {
     
     var copyText = document.getElementById("myInput");
